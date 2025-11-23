@@ -47,7 +47,7 @@ export class UserModel {
       );
   
       const sql = `
-        INSERT INTO users (firstname, lastname, password_digest)
+        INSERT INTO users (firstname, lastname, password)
         VALUES ($1, $2, $3)
         RETURNING id, firstname, lastname
       `;
@@ -72,7 +72,7 @@ export class UserModel {
       const user = result.rows[0];
       const valid = bcrypt.compareSync(
         password + BCRYPT_PASSWORD,
-        user.password_digest
+        user.password
       );
   
   

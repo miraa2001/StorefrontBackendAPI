@@ -1,6 +1,5 @@
-CREATE TABLE order_products (
+CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
-    quantity INTEGER NOT NULL,
-    orderid INTEGER REFERENCES orders(id) ON DELETE CASCADE,
-    productid INTEGER REFERENCES products(id) ON DELETE CASCADE
-);yarn
+    userid INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    status VARCHAR(20) NOT NULL
+);
