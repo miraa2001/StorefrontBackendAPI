@@ -10,7 +10,8 @@
     "migrate": "db-migrate up",
     "migrate-down": "db-migrate down",
     "migrate-test": "db-migrate --env test up",
-    "migrate-test-down": "db-migrate --env test down"
+    "migrate-test-down": "db-migrate --env test down",
+    "test": "set ENV=test&& jasmine"
   },
   "author": "Udacity",
   "license": "ISC",
