@@ -73,6 +73,11 @@ Start the built server:
 npm start
 ```
 
+Run tests:
+```bash
+npm test
+```
+
 ---
 
 ## **Authentication**
