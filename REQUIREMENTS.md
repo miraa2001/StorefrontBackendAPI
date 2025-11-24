@@ -98,7 +98,7 @@ These are the agreed endpoints and data shapes, plus the database schema that ba
 ## Data Shapes
 
 ### Product
-```
+```ts
 type Product = {
   id?: number;
   name: string;
@@ -108,7 +108,7 @@ type Product = {
 ```
 
 ### User
-```
+```ts
 type User = {
   id?: number;
   firstname: string;
@@ -118,7 +118,7 @@ type User = {
 ```
 
 ### Order
-```
+```ts
 type Order = {
   id?: number;
   userid: number;
@@ -127,7 +127,7 @@ type Order = {
 ```
 
 ### OrderProduct
-```
+```ts
 type OrderProduct = {
   id?: number;
   quantity: number;
